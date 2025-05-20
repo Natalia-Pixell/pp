@@ -1,21 +1,36 @@
-// components/HeroSection.tsx
+import Image from "next/image";
 
 export default function HeroSection() {
-    return (
-      <section className="text-center flex flex-col items-center gap-6 py-20 w-full">
-        <h1 className="text-5xl font-bold text-[#171717]">
-          Hi, ich bin Natalia.
-        </h1>
-        <p className="text-lg text-gray-600 max-w-xl">
-          Ich entwickle moderne Web-Erlebnisse mit <strong>React</strong>, <strong>Tailwind</strong> und einer Leidenschaft für Design.
-        </p>
-        <a
-          href="#projects"
-          className="px-6 py-3 bg-[#171717] text-white rounded-lg hover:bg-[#333] transition"
-        >
-          Sieh dir meine Projekte an
-        </a>
-      </section>
-    );
-  }
-  
+  return (
+    <div className="flex flex-col-reverse md:flex-row gap-8 items-center w-full px-4 py-12">
+      {/* Text */}
+      <div className="md:w-1/2 text-center md:text-left">
+        <section className="flex flex-col gap-6">
+          <h1 className="text-5xl font-bold">
+            Hi, ich bin Natalia.
+          </h1>
+          <p className="text-2xl max-w-xl">
+            Ich bin duale Studentin der <strong>Informatik</strong> bei <strong>Telekom</strong> und entwickle zum Spaß eigene Webseiten.
+          </p>
+          <a
+            href="#projects"
+            className="px-6 py-3 bg-[#F7E1D7] rounded-xl hover:bg-[#f7e1d7c4] transition w-fit mx-auto md:mx-0"
+          >
+            Erfahre mehr über mich
+          </a>
+        </section>
+      </div>
+
+      {/* Bild */}
+      <div className="md:w-1/2 flex justify-center">
+        <Image
+          src="/images/profilbild.jpg" // liegt in public/images/
+          alt="Profilbild von Natalia"
+          width={300}
+          height={300}
+          className="rounded-full shadow-lg object-cover"
+        />
+      </div>
+    </div>
+  );
+}

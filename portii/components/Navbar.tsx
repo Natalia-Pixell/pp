@@ -13,8 +13,8 @@ export default function Navbar() {
       </div>
         <div className="space-x-7  p-2 rounded-4xl">
           <Link href="/" className="navlink">Home</Link>
-          <Link href="/projects" className="navlink">Projecte</Link>
-          <Link href="/contact" className="navlink">Blog</Link>
+          <Link href="/projekte" className="navlink">Projekte</Link>
+          <Link href="/blog" className="navlink">Blog</Link>
         </div>
         <div className="flex gap-7 text-lg">
         <a href="https://www.linkedin.com/in/natalia-jagiela-1a8912341/" target="_blank" rel="noopener noreferrer" className="ico"><FaLinkedin className="w-6 h-6" /></a>

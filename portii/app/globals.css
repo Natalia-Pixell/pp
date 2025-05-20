@@ -4,7 +4,7 @@
   --background: #DEDBD2;
   --foreground: #4A5759;
   --text-align-default: center;
-  --padding-default: 1rem;
+  --padding-default: 4px;
 }
 
 
@@ -12,6 +12,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-eb), Arial, Helvetica, sans-serif;
+  padding: var(--padding-default);
 }
 
 @layer components {
