@@ -1,7 +1,7 @@
 // app/layout.tsx
 import './globals.css';
 import type { Metadata } from 'next';
-import Navbar from '../components/navbar';
+import Navbar from '../components/Navbar';
 import { EB_Garamond } from "next/font/google";
 
 const eb = EB_Garamond({

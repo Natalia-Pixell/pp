@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #A0C29E;
-  --foreground: #171717;
+  --background: #DEDBD2;
+  --foreground: #4A5759;
   --text-align-default: center;
   --padding-default: 1rem;
 }
@@ -17,9 +17,9 @@ body {
 @layer components {
 
 .navlink{
-  @apply text-[#000000] hover:text-[#C5D9C4] transition text-lg;
+  @apply hover:text-[#F7E1D7] transition text-lg;
 }
 .ico{
-  @apply text-[#000000] transition transform hover:text-[#C5D9C4];
+  @apply transition transform  hover:text-[#F7E1D7];
 }
 }
